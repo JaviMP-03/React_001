@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+#root {
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+input {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: calc(100% - 100px);
+  margin-right: 8px;
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #4f46e5;
+  color: white;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+.tarea {
+  background-color: white;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.tarea p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.tarea.hecha p {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.botones {
+  display: flex;
+  gap: 6px;
+}
+
+.botones button {
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+
+.botones button.btn-completar {
+  background-color: #16a34a;
+}
+
+.botones button.btn-completar:hover {
+  background-color: #15803d;
+}
+
+.botones button.btn-pendiente {
+  background-color: #d97706;
+}
+
+.botones button.btn-pendiente:hover {
+  background-color: #b45309;
+}
+
+.botones button.btn-eliminar {
+  background-color: #dc2626;
+}
+
+.botones button.btn-eliminar:hover {
+  background-color: #b91c1c;
+}
