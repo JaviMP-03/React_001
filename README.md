@@ -9,7 +9,7 @@ Este proyecto utiliza JavaScript + swc (Speedy Web Compiler) asique hay cosas su
 # Clase App.jsx
 Cuando algo cambia React NUNCA actualiza toda la pagina, solo lo que es necesario, el useState se encarga de eso, para crearlo se crea una variable que tiene un array con 2 variables, pongamos el ejemplo de tareas y setTareas, tareas es la variable a la que se le va a asignar el valor, setTareas es un metodo que va a encargarse de que tareas funcione, el = useState(tareasIniciales) simplemente le da como valor inicial al useState el array con tareas ya creadas, si hiciesemos un useState para contar cuantas veces se pulsa un boton seria algo asi const [pulsado, setPulsado] = useState(0) <-- se pone 0 pq al principio queremos que muestre que el boton ha sido pulsado 0 veces, basicamente dentro de los parentesis del useState puede ir cualquier cosa, un string, un boolean, un int, o una cadena vacia (como es el caso del useState para añadir tareas)
 
-## funcion addTarea, 
+## funcion addTarea 
 el if dice que si recibe una cadena vacia no haga nada, si la cadena no está vacia creamos una nueva variable, como id le pasamos la fecha de hoy, esto es para no complicarse creando un contador que se incremente cada vez que se crea una tarea, mas que nada se hace asi por pereza, el texto de la tarea será el texto de la variable nuevaTarea del useState, al crearla hacemos que este sin completar por eso el hecha = false
 La linea:
 
@@ -26,5 +26,3 @@ en react no se puede cambiar el valor de una tarea y ya, hay que crear otro obje
 
 setTareas(tareas.filter((tarea) =>  tarea.id !== id))
 es como que le digo al setTareas: oye, vamos a cambiar el valor del array de tareas, antes habia 3, ahora solo va a haber las que pasen el filtro, ese filtro va a ser que si el id que pido en el metodo coincide con el de una tarea esa no lo pasa
-
-esta es mi explicacion con mis palabras, lo se, no es nada formal pero a mi me sirve para entenderlo, ahora necesito que analices bien todo lo que digo, si digo alguna burrada dime, oye, esto no es asi como tu dices
